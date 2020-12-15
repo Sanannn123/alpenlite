@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  .container {
+    header {
+      nav {
+        .row{
+          .logo{
+            padding: 10px 0;
+            font-family: "Rowdies", cursive;
+          }
+          .right-col{
+            float:right;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            ul{
+              padding: 10px 0;
+              display: flex;
+              justify-content: space-between;
+              text-transform: capitalize;
+              width: 70%;
+              li{
+                font-weight: bold;
+                &:hover{
+                  cursor: pointer;
+                  color: rgb(255, 159, 70);
+                  transition: 0.2s;
+                }
+              }
+            }
+            img{
+              width: 20px;
+            }
+          }
+        }
+    }
+  }
+    main {
+      h1 {
+        font-family: "Playfair Display", serif;
+        margin-top: 2em;
+        font-size: 60px;
+        color: black;
+      }
+      p {
+        font-size: 20px;
+        width: 40%;
+        font-weight: 400;
+        color: rgb(43, 43, 43);
+      }
+      .images {
+        display: flex;
+        // justify-content: center;
+        img {
+          min-height: 200px;
+          width: 45%;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+          font-weight: 400;
+          color: grey;
+          &:hover {
+            color: black;
+            cursor: pointer;
+            font-weight: 600;
+          }
+        }
+      }
+      .row3 {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        img {
+          width: 200px;
+        }
+        h3 {
+          font-family: serif;
+          font-weight: 600;
+          font-size: 50px;
+        }
+        .arrow {
+          img {
+            width: 50px;
+          }
+        }
+      }
+      .card-deck {
+        width: 95%;
+      }
+      .cover-photo {
+        img {
+          width: 95%;
+          height: 30em;
+        }
+      }
+      
+    }
+    footer{
+      padding: 50px;
+      background-color: rgb(214, 214, 214);
+      .text{
+        padding:10px;
+        text-align: center;
+        h2{
+          font-size: 40px;
+        }
+        span{
+          font-size: 20px;
+        }
+      }
+      form{
+        text-align:center;
+        input{
+          border:none;
+          width:15em;
+        }
+        button{
+          background-color:black;
+          color:white;
+          border:none;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:600px) {
+  header{
+    nav{
+      .logo{
+        text-align: center;
+      }
+      .right-col {
+        ul{
+          li{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  h1{
+    font-size: 20px;
+  }
+  p {
+    font-size: 10px;
+    width: 60%;
+  }
+}
+
